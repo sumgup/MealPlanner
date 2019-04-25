@@ -3,7 +3,7 @@ import MealItem from './mealitem';
 
 function MealType(props){
     return(
-        <div className="MealType2">
+        <div className="MealType">
             <label>{props.value}</label>
             <MealItem value="Oats"/>
         </div>
