@@ -1,15 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
+import ReactDOM from 'react-dom';
 import './App.css';
+import WeeklyMealPlan from './components/weeklymealplan'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-       <label>MealPlanner</label>
-      </header>
-    </div>
-  );
-}
+ReactDOM.render(<WeeklyMealPlan />, document.getElementById("root"));
 
-export default App;
+export default WeeklyMealPlan;
