@@ -1,0 +1,12 @@
+.common{
+    color: lightgreen;
+}
+
+.normal{
+   composes : common;
+}
+
+.pressed{
+    composes : common;
+    opacity: 0.3;
+}

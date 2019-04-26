@@ -1,0 +1,12 @@
+{
+   "mealItems" : [
+        {
+            "name":"Oats",
+            "tags":"breakfast"
+        },
+        {
+            "name":"Oats",
+            "tags":"lunch"
+        }
+    ]
+}
