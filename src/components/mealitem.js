@@ -4,7 +4,7 @@ function MealItem(props)
 {
     return(
         <div className="mealitem">
-            <label>{props.value}</label>
+            <li>{props.value}</li>
         </div>
     );
 }

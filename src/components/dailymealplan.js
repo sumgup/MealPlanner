@@ -1,13 +1,15 @@
 import React from 'react';
 import MealType from './mealtype'
 
+const mealTypes = ['Breakfast','Lunch','Dinner']
+
 function DailyMealPlan(props){
     return(
         <div className="DailyMealPlan">
-            <label>{props.value}</label>
-            <MealType value="Breakfast"/>
-            <MealType value="Lunch"/>
-            <MealType value="Dinner"/>
+            <li>{props.value}</li>
+            <ul>{mealTypes.map((value,index) => 
+                    <MealType value={value} key={index}/>)}
+            </ul>
         </div>
     );
 }

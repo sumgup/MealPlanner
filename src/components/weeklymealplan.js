@@ -1,22 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import DailyMealPlan from './dailymealplan'
 
+const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
 function WeeklyMealPlan() {
-    return (
-      <div className="WeeklyMealPlanRobot">
-        <header className="App-header">
-         <label>WeeklyMealPlanRobot</label>
-         <DailyMealPlan value="Monday"/>
-         <DailyMealPlan value="Tuesday"/>
-         <DailyMealPlan value="Wednesday"/>
-         <DailyMealPlan value="Thursday"/>
-         <DailyMealPlan value="Friday"/>
-         <DailyMealPlan value="Saturday"/>
-         <DailyMealPlan value="Sunday"/>
-        </header>
-      </div>
-    );
+  let weeklyMealPLan = (
+    <div className="WeeklyMealPlanRobot">
+      <header className="App-header">
+        <label>WeeklyMealPlanRobot</label>
+        <ul>{
+          days.map((day, index) =>
+            <DailyMealPlan key={index} value={day} />)
+        }
+        </ul>
+      </header>
+    </div>
+  );
+
+  return weeklyMealPLan;
   }
 
   export default WeeklyMealPlan;
