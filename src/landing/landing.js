@@ -1,12 +1,16 @@
 import React from 'react';
 import './landing.css';
-
+import Header from '../common/header/header';
+import Footer from '../common/footer/footer';
+import Main from './main';
 
 function LandingPage(props){
     return(
-        <div>
-            <h1>I am landing page</h1>
-        </div>
+      <div class="container">
+        <Header/> 
+        <Main/>
+        <Footer/>
+       </div>
     );
 }
 
