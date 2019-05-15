@@ -1,0 +1,17 @@
+{
+   "mealItems" : [
+        {
+            "name":"Oats",
+            "tags":["breakfast"]
+        },
+        {
+            "name":"Oats",
+            "tags": ["lunch"]
+        },
+        {
+            "name":"Bombay Sandwich",
+            "tags": ["breakfast","weekendspecial"]
+        }
+
+    ]
+}
