@@ -1,36 +1,33 @@
 import React from 'react';
 import MealItem from './mealitem';
-import styled, { css }  from 'styled-components'
+import styled, { css } from 'styled-components'
+
+const cornerRadius = 20;
 
 const Card = styled.div`
-  border-radius: 30px 30px 0px 0px;
   display:grid;
-  width:300px;
-  height:200px;
-  grid-template-columns: 60px 60px;
-  grid-template-areas:"daytimecolor" "mealitems";
-  `
-  const DaytimeColorStripColumn = styled.div`
+  grid-template-columns: 50px 250px;
+  min-height:200px;`
+
+const DaytimeColorStripColumn = styled.div`
+    border-radius: ${cornerRadius}px 0px 0px ${cornerRadius}px;
      background: yellow;
-     grid-area : daytimecolor;
+  `
+const Recipes = styled.div`
+    border-radius: 0px ${cornerRadius}px ${cornerRadius}px 0px;
+    background:lightgrey;
   `
 
-  const Recipes = styled.div`
-    background:white;
-    grid-area : mealitems;
-  `
-
-// Kind of Meal
- class Breakfast extends React.Component{
-    render(){
-        return(
+class Breakfast extends React.Component {
+    render() {
+        return (
             <Card>
-              <DaytimeColorStripColumn/>
-              <Recipes>
-                <MealItem>Oats</MealItem>
-                <MealItem>Sandwich</MealItem>
-                <MealItem>Milk</MealItem>
-              </Recipes>
+                <DaytimeColorStripColumn />
+                <Recipes>
+                    <MealItem value="Oats"></MealItem>
+                    <MealItem value="Sandwich"></MealItem>
+                    <MealItem value="Milk"></MealItem>
+                </Recipes>
             </Card>
         );
     }
