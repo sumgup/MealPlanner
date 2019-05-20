@@ -1,0 +1,14 @@
+{
+    "breakfast": [
+        "fixed",
+        "rotating"
+    ],
+    "lunch": [
+        "fixed",
+        "rotating"
+    ],
+    "dinner": [
+        "fixed",
+        "rotating"
+    ]
+}
