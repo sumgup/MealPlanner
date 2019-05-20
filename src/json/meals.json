@@ -1,0 +1,34 @@
+[
+    {
+        "name": "potato sandwich",
+        "timing": ["breakfast"]
+    },
+    {
+        "name": "poha",
+        "timing": ["breakfast"]
+    },
+    {
+        "name": "idli",
+        "timing": ["breakfast"]
+    },
+    {
+        "name": "cheela",
+        "timing": ["breakfast"]
+    },
+    {
+        "name": "overnight oats",
+        "timing": ["breakfast"]
+    },
+    {
+        "name": "paratha",
+        "timing": ["breakfast"]
+    },
+    {
+        "name": "dosa",
+        "timing": ["breakfast"]
+    },
+    {
+        "name": "rava idli",
+        "timing": ["breakfast","lunch"]
+    }
+]

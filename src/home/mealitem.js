@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Could be anything ranging from Beverage, Dessert,Soup 
+
 function MealItem(props)
 {
     return(
