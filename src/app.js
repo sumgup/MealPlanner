@@ -3,15 +3,12 @@ import React from 'react';
 import WeeklyMealPlan from '../src/home/weeklymealplan';
 import GlobalStyle from './globalstyle';
 import { ThemeProvider } from 'styled-components';
-
-const theme = {
-    font: 'Calibri'
-};
+import Theme from './theme';
 
 class App extends React.Component {
     render() {
         return (
-            <ThemeProvider theme={theme}>
+            <ThemeProvider theme={Theme}>
                 <div>
                     <GlobalStyle />
                     <WeeklyMealPlan />
