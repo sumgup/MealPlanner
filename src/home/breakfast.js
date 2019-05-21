@@ -1,7 +1,6 @@
 import React from 'react';
 import MealItem from './mealitem';
-import styled, { css } from 'styled-components'
-import GlobalStyle from '../globalstyle'
+import styled from 'styled-components'
 
 const cornerRadius = 1.25;
 
