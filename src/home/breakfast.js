@@ -1,20 +1,21 @@
 import React from 'react';
 import MealItem from './mealitem';
 import styled, { css } from 'styled-components'
+import GlobalStyle from '../globalstyle'
 
-const cornerRadius = 20;
+const cornerRadius = 1.25;
 
 const Card = styled.div`
   display:grid;
-  grid-template-columns: 50px 250px;
-  min-height:200px;`
+  grid-template-columns: 1fr 3fr;
+  min-height:12.5em;`
 
 const DaytimeColorStripColumn = styled.div`
-    border-radius: ${cornerRadius}px 0px 0px ${cornerRadius}px;
+    border-radius: ${cornerRadius}em 0em 0em ${cornerRadius}em;
      background: yellow;
   `
 const Recipes = styled.div`
-    border-radius: 0px ${cornerRadius}px ${cornerRadius}px 0px;
+    border-radius: 0em ${cornerRadius}em ${cornerRadius}em 0em;
     background:lightgrey;
   `
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import Meals from './meals'
+import styled from 'styled-components'
 
 const mealTypess = ['Breakfast']
 
