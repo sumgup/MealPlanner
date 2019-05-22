@@ -6,7 +6,7 @@ const cornerRadius = 1.25;
 
 const Card = styled.div`
   display:grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 0.5fr 3fr;
   min-height:12.5em;`
 
 const DaytimeColorStripColumn = styled.div`

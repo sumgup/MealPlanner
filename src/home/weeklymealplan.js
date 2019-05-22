@@ -14,6 +14,10 @@ const Button = styled.button`
   border-radius: 3px;
 `;
 
+const WeeklyList = styled.ul`
+list-style-type: none;
+`
+
 const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 function WeeklyMealPlan() {
@@ -22,11 +26,11 @@ function WeeklyMealPlan() {
       <header>
       <Button>Generate Meal Plan</Button>
         <label>WeeklyMealPlanRobot</label>
-        <ul>{
+        <WeeklyList>{
           days.map((day, index) =>
             <DailyMealPlan key={index} value={day} />)
         }
-        </ul>
+        </WeeklyList>
       </header>
     </div>
   );

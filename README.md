@@ -13,6 +13,29 @@ WeeklyMealPlan
     "Breakfast, Lunch, Dinner , Supper(Optional)"
     - MealItem 
 
+# Supported media queries
+
+Currently designed to tackle following resolutions
+
+1. Mobile - 0 to 600px
+2. Laptops and Tablet - 600 to 1200
+3. Desktops - 1200 px and above
+
+`@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) { @content; }
+  } 
+    @else if $size == laptop-tab-up {
+    @media (min-width: 1200px) { @content; }
+  } 
+    @else if $size == desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+}`
+
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
